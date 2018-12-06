@@ -1,0 +1,13 @@
+<div class="animated fadeIn">
+    <div class="card">
+      <div class="card-header">
+        Position
+      </div>
+      <div class="card-body">
+        
+        <ng2-smart-table [settings]="settings" (createConfirm)="addRecord($event)" (editConfirm)="editData($event)" (deleteConfirm)="deleteRecord($event)"  [source]="data"></ng2-smart-table>
+        </div>
+    </div>
+    <button (click)="cek()">hahah</button>
+</div>
+        

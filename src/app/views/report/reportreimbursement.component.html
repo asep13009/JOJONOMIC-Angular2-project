@@ -1,0 +1,242 @@
+<div class="animated fadeIn">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-search"></i>Search Reimbursement
+                <div class="card-header-actions">
+                  <button type="button" class="btn btn-minimize"
+                  (click)="toggleCollapse2()"><i class={{iconCollapse2}}></i>
+              </button>
+          </div>
+      </div>
+      <div (collapsed2)="collapsed2($event)"
+      (expanded2)="expanded2($event)"
+      [collapse]="isCollapsed2"
+      class="card-body">
+
+      <form class="form-horizontal">
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col-sm-4">
+                  
+                  <select class="form-control" id="ccmonth">
+                    <option>Create Date</option>
+                    <option>Approved Date</option>
+                    <option>Disbursed Date</option>
+                    <option>Rejected Date</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-4">
+              
+              <select class="form-control" id="ccyear">
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+            </select>
+        </div>
+        <div class="form-group col-sm-4">
+            <select class="form-control" id="cvv">
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+            </select>
+        </div>
+    </div><!--/.row-->
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Status</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Expense Categories</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+            
+        </div>
+    </div>
+    
+    
+    <hr/>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Teams</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+            
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Employee Email</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+            
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Employee Name</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+            
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Reference ID</label>
+        <div class="col-md-9">
+            <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+            
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="email-input">Cash Advance Desc</label>
+        <div class="col-md-9">
+            <textarea type="text" id="status" name="status" class="form-control" placeholder="Description"></textarea>
+            
+        </div>
+    </div>            
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary col-sm-12"> <i class="fa fa-search"></i> Search</button>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div> <!--/.col-->
+   
+    
+<!-- =============================================================== -->
+    
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    <i class="fa fa-search"></i>Search Tag
+                    <div class="card-header-actions">
+                      <button type="button" class="btn btn-minimize"
+                      (click)="toggleCollapse()"><i class={{iconCollapse}}></i>
+                  </button>
+              </div>
+          </div>
+          <div (collapsed)="collapsed($event)"
+          (expanded)="expanded($event)"
+          [collapse]="isCollapsed"
+          class="card-body">
+    
+          <form class="form-horizontal">
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                      
+                      <select class="form-control" id="ccmonth">
+                        <option>Create Date</option>
+                        <option>Approved Date</option>
+                        <option>Disbursed Date</option>
+                        <option>Rejected Date</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                  
+                  <select class="form-control" id="ccyear">
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-4">
+                <select class="form-control" id="cvv">
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+            </div>
+        </div><!--/.row-->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="email-input">Tag</label>
+            <div class="col-md-9">
+                <input type="text" id="tag" name="tag" class="form-control" placeholder="Select Status">
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="email-input">Expense Categories</label>
+            <div class="col-md-9">
+                <input type="text" id="tag" name="tag" class="form-control" placeholder="Select Status">
+                
+            </div>
+        </div>
+        
+        
+        <hr/>
+        
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="email-input">Teams</label>
+            <div class="col-md-9">
+                <input type="text" id="status" name="status" class="form-control" placeholder="Select Status">
+                
+            </div>
+        </div>
+        
+       
+        
+       
+        
+       
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="email-input">Tag Desc</label>
+            <div class="col-md-9">
+                <textarea type="text" id="tag" name="tag" class="form-control" placeholder="Description"></textarea>
+                
+            </div>
+        </div>            
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary col-sm-12"> <i class="fa fa-search"></i> Search</button>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+
+    

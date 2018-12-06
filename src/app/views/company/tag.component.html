@@ -1,0 +1,59 @@
+<div class="animated fadeIn">
+    <div class="mg-auto" align="center">
+    <img src="assets/img/icon/icons8-sum-90.png"  data-toggle="modal" (click)="largeModal.show()"/>
+    <p>Add Tag</p>
+  </div><!--/.col-->
+    <div class="card">
+      <div class="card-header">
+        Tag
+      </div>
+      <div class="card-body">
+        <ng2-smart-table [settings]="settings" (editConfirm)="editData($event)" (delete)="deleteConfirm($event)" [source]="data"></ng2-smart-table>
+        </div>
+    </div>
+    <div bsModal #largeModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Add Tag</h4>
+              <button type="button" class="close" (click)="largeModal.hide()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="name-input"> Name</label>
+                    <div class="col-md-10">
+                      <input type="text" id="tagname" name="status" class="form-control" placeholder="Tag Name">
+                    </div>
+                </div>
+                
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="name-input">Team</label>
+                <div class="form-group col-md-10">
+                  <select class="form-control" id="expensetypeid">
+                    <option>IT</option>
+                    <option>HR</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="name-input">Expense Category</label>
+                <div class="form-group col-md-10">
+                  <select class="form-control" id="expensecategoryid">
+                    <option>Cash Advance</option>
+                    <option>Reimbursement</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" (click)="largeModal.hide()">Cacncel</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+</div>

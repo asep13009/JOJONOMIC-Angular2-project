@@ -1,0 +1,138 @@
+<div class="animated fadeIn">
+  <div class="mg-auto" align="center">
+      <img src="assets/img/icon/icons8-sum-90.png"  data-toggle="modal"  (click)="largeModal.show()"/>
+      <p>Add Employee</p>
+  </div><!--/.col-->
+
+  <div class="card">
+      <div class="card-header">Employee</div>
+      <div class="card-body">
+
+          <ng2-smart-table [settings]="settings" (editConfirm)="editData($event)" (delete)="deleteConfirm($event)" [source]="data"></ng2-smart-table>
+
+      </div>
+      <div bsModal #largeModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Add Team</h4>
+                      <button type="button" class="close" (click)="largeModal.hide()" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()"> -->
+                  
+                      <div class="modal-body">
+                          <div class="form-group row">
+                              <label class="col-md-3 col-form-label" for="name-input">Employee Detail</label>
+                              <label class="col-md-9 col-form-label"></label>
+
+                              <label class="col-md-2 col-form-label" for="name-input">First Name</label>
+                              <div class="col-md-4">
+                                  <input type="text" id="firstname"  formControlName="firstname" class="form-control" placeholder="Input first name">
+                              </div>
+                              <label class="col-md-2 col-form-label" for="name-input">Last Name</label>
+                              <div class="col-md-4">
+                                  <input type="text" id="lastname" formControlName="lastname"  class="form-control" placeholder="Input last name">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Email</label>
+                              <div class="col-md-10">
+                                  <input type="text" id="email" formControlName="email" class="form-control" placeholder="Email">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Password</label>
+                              <div class="col-md-10">
+                                  <input type="password" id="password" formControlName="password" class="form-control" placeholder="Password">
+                              </div>
+                          </div>
+
+
+
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Team</label>
+                              <div class="form-group col-md-10">
+                                  <select class="form-control" id="teamid">
+                                      <option>Transportation</option>
+                                      <option>Meals</option>
+                                      <option>Entertainment</option>
+                                      <option>Telecomunication</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Position</label>
+                              <div class="form-group col-md-10">
+                                  <select class="form-control" id="positionid">
+                                      <option>IT</option>
+                                      <option>HR</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Jabatan</label>
+                              <div class="form-group col-md-10">
+                                <!-- <select class="form-control"  [formControl]="sampleform.controls['id']">
+                                    <option value="0">--Select--</option>  
+                                    <option *ngFor="let jabatan of jabatan" value={{jabatan.id}}> {{jabatan.nama_jabatan}} </option>  
+                                </select> -->
+                              </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Employee Type</label>
+                              <div class="form-group col-md-10">
+                                  <select class="form-control" id="employeetypeid">
+                                      <option>On Site</option>
+                                      <option>Mobile</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Role</label>
+                              <div class="form-group col-md-10">
+                                  <select class="form-control" id="roleid">
+                                      <option>User</option>
+                                      <option>CEO</option>
+                                      <option>Admin Finance</option>
+                                      <option>System Admin</option>
+                                      <option>Verificator</option>
+                                      <option>Approval</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Account Bank</label>
+                              <div class="col-md-10">
+                                  <input type="text" id="accountbank" name="status" class="form-control" placeholder="Account Bank">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-2 col-form-label" for="name-input">Venue</label>
+                              <div class="form-group col-md-10">
+                                  <select class="form-control" id="venueid">
+                                      <option>Office A</option>
+                                      <option>Office B</option>
+
+                                  </select>
+                              </div>
+                          </div>
+
+
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" (click)="largeModal.hide()">Close</button>
+                              <button type="submit">Submit</button>
+                              <!-- <button type="submit" [disabled]="!insertEmployee.valid">Submit</button> -->
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                          </div>
+                      </div><!-- /.modal-content -->
+                  <!-- </form> -->
+
+              </div>
+          </div>
+      </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+

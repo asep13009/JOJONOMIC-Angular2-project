@@ -1,0 +1,31 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: #fff;
+    background: #236967;
+}
+.sidebar .nav-link .nav-icon {
+    display: inline-block;
+    width: 1.09375rem;
+    margin: 0 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: #e8f25e;
+    text-align: center;
+}
+
+
+.sidebar .nav-dropdown.open > .nav-dropdown-items {
+    background-color: black;
+    max-height: 1500px;
+}
+.sidebar .nav-link.active {
+    color: #edd7d7;
+    background: #28628e00;
+}
+.iconadd{
+    padding-left: 400px;
+}
+.textadd{
+    padding-left: 430px;
+}
